@@ -1,0 +1,32 @@
+.container {
+    display: grid;
+    grid-template-columns: 30% 70%; 
+    grid-template-areas:
+    "naglowek naglowek"
+    "bok glowny"
+    "stopka stopka"
+}
+
+header{
+    grid-area: naglowek;
+    height:200px;
+    background-color: blue;
+}
+
+aside{
+    grid-area: bok;
+    height:400px;
+    background-color: rgb(98, 98, 255);
+}
+
+main {
+    grid-area: glowny;
+    height:400px;
+    background-color: rgb(172, 172, 255);
+}
+
+footer{
+    grid-area: stopka;
+    height:200px;
+    background-color: blue;
+}
