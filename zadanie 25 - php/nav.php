@@ -1,20 +1,19 @@
 <?php
-   $currentPage = basename($_SERVER['PHP_SELF']); 
+    $currentPage = basename($_SERVER['PHP_SELF']);
 ?>
 
+<link rel="stylesheet" href="style.css">
+
 <nav>
+    <a href="index.php" class="<?= $currentPage == 'index.php' ? 'active' : '' ?>">Strona startowa</a>
 
-    <link rel="stylesheet" href="style.css">
+    <a href="dodaj.php" class="<?= $currentPage == 'dodaj.php' ? 'active' : '' ?>">Dodaj grę</a>
 
-    <a href ="index.php" class="<?= $currentPage == 'index.php' ? 'active' : '' ?>"> Strona startowa </a>
+    <a href="lista.php" class="<?= $currentPage == 'lista.php' ? 'active' : '' ?>">Pokaż gry/grę</a>
 
-    <a href ="dodaj.php" class="<?= $currentPage == 'dodaj.php' ? 'active' : '' ?>"> Dodaj grę </a>
+    <a href="usun.php" class="<?= $currentPage == 'usun.php' ? 'active' : '' ?>">Usuń grę</a>
 
-    <a href ="lista.php" class="<?= $currentPage == 'lista.php' ? 'active' : '' ?>"> Pokaż gry/grę </a> 
+    <a href="edytuj.php" class="<?= $currentPage == 'edytuj.php' ? 'active' : '' ?>">Zaktualizuj grę</a>
 
-    <a href ="usun.php" class="<?= $currentPage == 'usun.php' ? 'active' : '' ?>"> Usuń grę </a>
-
-    <a href ="edytuj.php" class="<?= $currentPage == 'edytuj.php' ? 'active' : '' ?>"> Zaktualizuj grę </a>
-
-    <a href ="footer.php" class="<?= $currentPage == 'footer.php' ? 'active' : '' ?>"> Podsumowanie </a>
+    <a href="footer.php" class="<?= $currentPage == 'footer.php' ? 'active' : '' ?>">Podsumowanie</a>
 </nav>
